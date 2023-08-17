@@ -55,6 +55,7 @@ app.post('/add', function(req, res){
 
 // start server
 // -----------------------
-app.listen(3000, function(){
-    console.log('Running on port 3000!')
-})
+const PORT = 3001;
+app.listen(PORT, '0.0.0.0', function(){
+    console.log(`Running on port ${PORT}!`);
+});
